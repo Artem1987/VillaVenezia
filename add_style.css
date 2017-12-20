@@ -1,6 +1,7 @@
 .price-title {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  margin-top: 50px; }
 
 .price-container, .price-cell, .add_nights, .price-string, .price-table, .table-head, .table-head-cell, .price-info {
   display: flex;
@@ -51,5 +52,9 @@
   color: grey; }
 .add_nights li:last-child {
   color: #000; }
+
+.price-info {
+  font-size: 1.2rem;
+  padding: 0 40px; }
 
 /*# sourceMappingURL=add_style.css.map */
