@@ -1,0 +1,66 @@
+@mixin display {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.price-title {
+	width: 100%;
+	text-align: center;
+}
+.price-container, .price-cell, .price-string, .price-table, .table-head, .table-head-cell, .price-info {
+	@include display;
+}
+.price-container {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	width: 100%;
+	overflow: hidden;
+}
+.price-table {
+	width: 70%;
+	border: 1px solid grey;
+}
+.table-head {
+	background-color: #158DE4;
+	width: 100%;
+}
+.table-head-cell {
+	width: 25%;
+	min-height: 50px;
+	color: #fff;
+}
+.price-string {
+	width: 100%;
+	:first-child {
+		justify-content: left;
+	}
+	:last-child {
+		border-right: none;
+	}
+}
+.price-cell {
+	width: 24%;
+	border-bottom: 1px solid #ACD9EB;
+	border-right: 1px solid #ACD9EB;
+	align-items: center;
+    line-height: 1.6rem;
+    li {
+		list-style-type: none;
+    }
+    li:last-child {
+			color: grey;
+		}
+	h4 {
+		color: #000;
+	}
+}
+.add_nights {
+	@extend .price-cell;
+	li:first-child {
+			color: grey;
+	}
+	li:last-child {
+		color: #000;
+	}
+}

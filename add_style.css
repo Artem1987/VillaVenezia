@@ -1,0 +1,55 @@
+.price-title {
+  width: 100%;
+  text-align: center; }
+
+.price-container, .price-cell, .add_nights, .price-string, .price-table, .table-head, .table-head-cell, .price-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+
+.price-container {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden; }
+
+.price-table {
+  width: 70%;
+  border: 1px solid grey; }
+
+.table-head {
+  background-color: #158DE4;
+  width: 100%; }
+
+.table-head-cell {
+  width: 25%;
+  min-height: 50px;
+  color: #fff; }
+
+.price-string {
+  width: 100%; }
+  .price-string :first-child {
+    justify-content: left; }
+  .price-string :last-child {
+    border-right: none; }
+
+.price-cell, .add_nights {
+  width: 24%;
+  border-bottom: 1px solid #ACD9EB;
+  border-right: 1px solid #ACD9EB;
+  align-items: center;
+  line-height: 1.6rem; }
+  .price-cell li, .add_nights li {
+    list-style-type: none; }
+  .price-cell li:last-child, .add_nights li:last-child {
+    color: grey; }
+  .price-cell h4, .add_nights h4 {
+    color: #000; }
+
+.add_nights li:first-child {
+  color: grey; }
+.add_nights li:last-child {
+  color: #000; }
+
+/*# sourceMappingURL=add_style.css.map */
