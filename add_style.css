@@ -1,12 +1,23 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
 .price-title {
   width: 100%;
   text-align: center;
-  margin-top: 50px; }
+  margin-top: 50px;
+  box-sizing: border-box; }
 
-.price-container, .price-cell, .add_nights, .price-string, .price-table, .table-head, .table-head-cell, .price-info {
+.price-container, .price-cell, .add_nights, .price-string, .price-table, .table-head, .table-head-cell, .price-info, .table-first-row {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center; }
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden; }
 
 .price-container {
   margin: 0;
@@ -26,7 +37,8 @@
 .table-head-cell {
   width: 25%;
   min-height: 50px;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
 .price-string {
   width: 100%; }
@@ -35,18 +47,26 @@
   .price-string :last-child {
     border-right: none; }
 
-.price-cell, .add_nights {
+.table-first-row {
+  width: 25%;
+  text-align: left; }
+  .table-first-row h4 {
+    color: #000; }
+
+.price-cell, .add_nights, .table-first-row {
   width: 24%;
   border-bottom: 1px solid #ACD9EB;
   border-right: 1px solid #ACD9EB;
   align-items: center;
-  line-height: 1.6rem; }
-  .price-cell li, .add_nights li {
+  line-height: 1.5rem;
+  padding-bottom: 15px; }
+  .price-cell li, .add_nights li, .table-first-row li {
     list-style-type: none; }
+
+.price-cell, .add_nights {
+  text-align: center; }
   .price-cell li:last-child, .add_nights li:last-child {
     color: grey; }
-  .price-cell h4, .add_nights h4 {
-    color: #000; }
 
 .add_nights li:first-child {
   color: grey; }
@@ -54,7 +74,13 @@
   color: #000; }
 
 .price-info {
+  display: table;
   font-size: 1.2rem;
-  padding: 0 40px; }
+  padding: 0 30% 0 30%; }
+
+@media screen and (max-width: 800px) {
+  .price-table {
+    width: 100%;
+    border: none; } }
 
 /*# sourceMappingURL=add_style.css.map */
