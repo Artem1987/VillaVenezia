@@ -189,6 +189,8 @@ a:hover {
 
 .about_us-title {
   width: 100%; }
+  .about_us-title h2 {
+    margin: 5rem; }
 
 .about_us-title h1 {
   margin: 100px; }
