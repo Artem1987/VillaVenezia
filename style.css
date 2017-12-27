@@ -317,7 +317,7 @@ a:hover {
   .nav-container.responsive {
     display: table;
     width: 100%;
-    opacity: .85;
+    opacity: .95;
     background-color: #1A92F7;
     position: absolute;
     top: 0;
@@ -328,7 +328,8 @@ a:hover {
       .nav-container.responsive .nav-menu ul {
         width: 100%;
         padding-bottom: 10px;
-        padding: 0; }
+        padding: 0;
+        margin-top: 25px; }
         .nav-container.responsive .nav-menu ul li {
           display: block;
           background-color: #1A92F7; }
