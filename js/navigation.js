@@ -9,3 +9,15 @@ function menuResponsive() {
 function iconTransform(x) {
     x.classList.toggle("change");
 }
+$(document).ready(function(){
+			$("#nav-container").removeClass("top-scroll");
+			if(window.innerWidth > 800){
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > 100) {
+						$("#nav-container").addClass("top-scroll").fadeIn('slow');
+					} else {
+						$("#nav-container").removeClass("top-scroll").fadeIn('slow');
+					};
+				});
+			}
+		});

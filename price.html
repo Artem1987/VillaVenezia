@@ -11,11 +11,35 @@
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/PT_Sans-Caption-Web-Regular.ttf">
-	<link rel="stylesheet" href="js/jquery/jquery-ui.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="price-header">
+		<div id="nav-container" class="nav-container">
+			<div class="nav-empty-box"></div>
+			<div id="nav-menu" class="nav-menu">
+				<div class="bar">
+					<a href="javascript:void(0);" onclick="menuResponsive()">
+						<div id="bar" class="bar-icon" onclick="iconTransform(this)">
+						  <div class="bar1"></div>
+						  <div class="bar2"></div>
+						  <div class="bar3"></div>
+						</div>
+					</a>
+				</div>
+				<ul>
+					<li class="item-01"><a href="index.html">Home</a></li>
+					<li class="item-02"><a href="price.html">Price</a></li>
+					<li class="item-03"><a href="index.html#service">Service</a></li>
+					<li class="item-04"><a href="https://www.homeaway.co.uk/p6229734#ratesAnchor">Reviews</a></li>
+					<li class="item-05"><a href="#footer">Contacts</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		
 	<div class="price-title">
-		<h1>Prices for this holiday corporate apartment in Sciacca, Sicily</h1>
+		<h2>Prices for this holiday corporate apartment in Sciacca, Sicily</h2>
 	</div>
 	<div class="price-container">
 		<div class="price-table">
@@ -248,6 +272,36 @@
 		</ul>
 	</p>
 </div>
-<?php get_footer(); ?>
+<footer id="footer">
+		<div class="footer-part1">
+			<div class="column_x3">
+				<div class="footer-column1">
+					<h3>Giuseppe Venezia</h3>
+					<div class="phonenumber">+39 347 506 05 27</div>
+					<div class="email"><a href="mailto:pinivenezia@gmail.com">pinivenezia@gmail.com</a></div>
+				</div>
+				</div>
+			<div class="column_x3">
+				<div class="footer-column2">
+					<h3>Contact us</h3>
+					<div class="social-icons">
+						<a href="https://www.facebook.com/giuseppe.venezia.186"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+						<a href="https://api.whatsapp.com/send?phone=393475060527"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+						<a href="#footer" class="skype-button bubble" data-contact-id="giuseppe.venezia43"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a>
+						<a href="mailto:pinivenezia@gmail.com"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-column3 column_x3"></div>
+		</div>
+		<div class="footer-part2">made with love by <a href="#">&nbsp Artem Safonov</a>
+		</div>
+	</footer>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/navigation.js"></script>
+	<script src="js/map.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa9_BiaEFgupSrRksVfuDcps4hrYf6Zas&callback=initMap" async defer>
+    </script>
+    <script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js" async defer></script>
 </body>
 </html>

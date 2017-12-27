@@ -1,18 +1,16 @@
 @keyframes anim {
   0% {
     opacity: 0;
-    width: 0;
     height: 0; }
   100% {
     opacity: .85;
-    width: 100%;
     height: auto; } }
 body {
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: white;
-  background-color: #000000;
+  background-color: #000;
   margin: 0;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -29,6 +27,9 @@ h2 {
 
 img {
   width: 100%; }
+
+li {
+  list-style-type: none; }
 
 a {
   text-decoration: none;
@@ -51,6 +52,31 @@ a:hover {
   display: inline-flex;
   width: 100%;
   position: relative; }
+  .nav-container .nav-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.7rem; }
+  .nav-container .nav-menu ul li {
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 20px;
+    background-color: #158DE4; }
+    .nav-container .nav-menu ul li a {
+      padding: 1px 3px;
+      border-radius: 5px; }
+  .nav-container .nav-menu ul li:hover {
+    cursor: pointer; }
+
+.nav-container.top-scroll {
+  position: fixed;
+  background-color: #1A92F7;
+  top: 0;
+  z-index: 9999; }
+  .nav-container.top-scroll .nav-menu {
+    margin: 20px; }
+    .nav-container.top-scroll .nav-menu ul li {
+      background-color: #1A92F7; }
 
 .bar {
   position: absolute;
@@ -61,25 +87,10 @@ a:hover {
 .nav-empty-box {
   width: 50%; }
 
-.nav-menu {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 60px; }
-
-.nav-menu ul li {
-  display: inline-flex;
-  flex-direction: row;
-  margin-left: 20px;
-  background-color: #536c23; }
-
-.nav-menu ul li:hover {
-  cursor: pointer; }
-
 .subtitle {
   width: 100%;
   text-align: center;
-  margin-top: 150px; }
+  padding-top: 150px; }
 
 .button-box {
   width: 100%;
@@ -295,9 +306,6 @@ a:hover {
     background-image: url(images/home_x320.jpg);
     min-height: 550px; }
 
-  .subtitle {
-    margin-top: 50%; }
-
   .button-box {
     min-height: 150px; }
 
@@ -308,31 +316,28 @@ a:hover {
 
   .nav-container.responsive {
     display: table;
+    width: 100%;
     opacity: .85;
-    background-color: #000;
+    background-color: #1A92F7;
     position: absolute;
     top: 0;
     animation: anim 1s; }
     .nav-container.responsive .nav-menu {
       width: 100%;
-      background-color: #000; }
-    .nav-container.responsive ul {
-      display: table;
-      width: 100%; }
-    .nav-container.responsive li {
-      display: block;
-      background-color: #000; }
+      background-color: #1A92F7; }
+      .nav-container.responsive .nav-menu ul {
+        width: 100%;
+        padding-bottom: 10px;
+        padding: 0; }
+        .nav-container.responsive .nav-menu ul li {
+          display: block;
+          background-color: #1A92F7; }
 
   .nav-empty-box {
     display: none; }
 
-  .nav-menu {
-    display: table; }
-
-  .nav-menu ul li {
-    display: none;
-    list-style-type: none;
-    margin-left: 0; }
+  .nav-container .nav-menu ul li {
+    display: none; }
 
   .bar-icon {
     display: inline-block;
@@ -401,19 +406,14 @@ a:hover {
       display: table;
       animation: anim 1s; }
 
+  nav-menu ul li {
+    display: table; }
+
   .nav-empty-box {
     display: none; }
 
-  .nav-menu {
-    display: table; }
-
-  .nav-container.nav-menu ul {
+  .nav-container .nav-menu ul li {
     display: none; }
-
-  .nav-menu ul li {
-    display: block;
-    list-style-type: none;
-    margin-left: 0; }
 
   .column_x3 {
     min-height: 100px; }

@@ -1,13 +1,14 @@
 @keyframes anim {
-    0% {opacity: 0; width: 0; height: 0;}
-    100% {opacity: .85; width: 100%; height: auto;}
+    0% {opacity: 0; height: 0;}
+    100% {opacity: .85; height: auto;}
 }
+$scroll: #1A92F7;
 body {
 	font-family: 'PT Sans Caption', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	color: white;
-	background-color: #000000;
+	background-color: #000;
 	margin: 0;
 	text-transform: uppercase;
 	box-sizing: border-box;
@@ -24,6 +25,9 @@ h2 {
 }
 img {
 	width: 100%;
+}
+li {
+	list-style-type: none;
 }
 a {
 	text-decoration: none;
@@ -47,7 +51,38 @@ a:hover {
 	display: inline-flex;
 	width: 100%;
 	position: relative;
+	.nav-menu {
+		width: 50%;
+	    display: flex;
+	    justify-content: space-around;
+	    margin-top: 1.7rem;
+	}
+	.nav-menu ul li {
+		display: inline-flex;
+	    flex-direction: row;
+	    margin-left: 20px;
+	    background-color: #158DE4;
+	    a {
+	    	padding: 1px 3px;
+	    	border-radius: 5px;
+	    }
+	}
+	.nav-menu ul li:hover {
+		cursor: pointer;
+	}
 }
+.nav-container.top-scroll {
+		position: fixed;
+		background-color: $scroll;
+		top: 0;
+		z-index: 9999;
+		.nav-menu {
+			margin: 20px;
+			ul li {
+				background-color: $scroll;
+			}
+		}
+	}
 .bar {
 	position: absolute;
 	top: 10px;
@@ -58,25 +93,10 @@ a:hover {
 .nav-empty-box {
 	width: 50%;
 }
-.nav-menu {
-	width: 50%;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
-}
-.nav-menu ul li {
-	display: inline-flex;
-    flex-direction: row;
-    margin-left: 20px;
-    background-color: #536c23;
-}
-.nav-menu ul li:hover {
-	cursor: pointer;
-}
 .subtitle {
 	width: 100%;
 	text-align: center;
-	margin-top: 150px;
+	padding-top: 150px;
 }
 .button-box {
 	width: 100%;
@@ -299,9 +319,7 @@ a:hover {
 		background-image: url(images/home_x320.jpg);
 		min-height: 550px;
 	}
-	.subtitle {
-		margin-top: 50%;
-	}
+
 	.button-box {
 		min-height: 150px;
 	}
@@ -312,34 +330,31 @@ a:hover {
 	}
 	.nav-container.responsive {
 		display: table;
+		width: 100%;
 		opacity: .85;
-		background-color: #000;
+		background-color: $scroll;
 		position: absolute;
 		top: 0;
 		animation: anim 1s;
 		.nav-menu {
 			width: 100%;
-			background-color: #000;
-		}
-		ul {
-			display: table;
-			width: 100%;
-		}
-		li {
-			display: block;
-			background-color: #000;
+			background-color: $scroll;
+			ul {
+				width: 100%;
+				padding-bottom: 10px;
+				padding: 0;
+				li {
+					display: block;
+					background-color: $scroll;
+				}
+			}
 		}
 	}
 	.nav-empty-box {
 		display: none;
 	}
-	.nav-menu {
-		display: table;
-	}
-	.nav-menu ul li {
+	.nav-container .nav-menu ul li {
 		display: none;
-		list-style-type: none;
-		margin-left: 0;
 	}
 	.bar-icon {
 	    display: inline-block;
@@ -411,19 +426,14 @@ a:hover {
 		animation: anim 1s;
 		}
 	}
+	nav-menu ul li {
+		display: table;
+	}
 	.nav-empty-box {
 		display: none;
 	}
-	.nav-menu {
-		display: table;
-	}
-	.nav-container.nav-menu ul {
+	.nav-container .nav-menu ul li{
 		display: none;
-	}
-	.nav-menu ul li {
-		display: block;
-		list-style-type: none;
-		margin-left: 0;
 	}
 	.column_x3 {
 		min-height: 100px;
