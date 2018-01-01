@@ -22,6 +22,7 @@ ul {
 	padding: 20px;
 	box-sizing: border-box;
 	background-color: #1A92F7;
+	border: 1px solid #1A92F7;
 }
 .price-container, .price-cell, .price-string, .price-table, .table-head, .table-head-cell, .price-info, .table-first-row {
 	@include display;
