@@ -14,7 +14,8 @@ ul {
 .price-title {
   width: 100%;
   text-align: center;
-  padding: 20px;
+  float: left;
+  padding-top: 45px;
   background-color: #4954E2; }
 
 .price-container, .price-cell, .add_nights, .price-string, .price-table, .table-head, .table-head-cell, .price-info, .table-first-row {
