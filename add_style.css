@@ -5,6 +5,10 @@ ul {
   background-color: #158DE4;
   width: 100%;
   margin: 0;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  min-height: 55px;
 }
 
 .price-title {
