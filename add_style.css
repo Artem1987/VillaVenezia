@@ -54,7 +54,8 @@ ul {
 
 .table-first-row {
   width: 25%;
-  text-align: left; }
+  text-align: left;
+  color: grey; }
   .table-first-row h4 {
     color: #000; }
 
@@ -69,7 +70,8 @@ ul {
     list-style-type: none; }
 
 .price-cell, .add_nights {
-  text-align: center; }
+  text-align: center;
+  color: #000; }
   .price-cell li:last-child, .add_nights li:last-child {
     color: grey; }
 
