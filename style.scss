@@ -311,7 +311,18 @@ a:hover {
 		margin: 0 20% 0 20%;
     }
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 922px) {
+	.nav-empty-box {
+		display: none;
+	}
+	.nav-container {
+	.nav-menu {
+		width: 100%;
+		justify-content: flex-start;
+		}
+	}
+}
+@media screen and (max-width: 768px){
 	.parallax {
         background-attachment: scroll;
     }

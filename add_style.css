@@ -6,11 +6,15 @@ ul {
   margin: 0;
   padding: 0; }
 
+.price-header, .price-info {
+  background-color: #1A92F7; }
+
 .price-title {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
-  box-sizing: border-box; }
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #1A92F7; }
 
 .price-container, .price-cell, .add_nights, .price-string, .price-table, .table-head, .table-head-cell, .price-info, .table-first-row {
   display: flex;
@@ -28,7 +32,7 @@ ul {
 
 .price-table {
   width: 70%;
-  border: 1px solid grey; }
+  border: 1px solid #158DE4; }
 
 .table-head {
   background-color: #158DE4;
