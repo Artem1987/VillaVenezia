@@ -334,6 +334,9 @@ a:hover {
           display: block;
           background-color: #1A92F7; }
 
+  .top-scroll {
+    display: none; }
+
   .nav-empty-box {
     display: none; }
 
