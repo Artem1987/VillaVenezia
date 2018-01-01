@@ -1,22 +1,16 @@
+body {
+  margin: 0;
+  padding: 0; }
+
 ul {
   margin: 0;
   padding: 0; }
-.price-header {
-  background-color: #158DE4;
-  width: 100%;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  box-sizing: border-box;
-  min-height: 55px;
-}
 
 .price-title {
   width: 100%;
   text-align: center;
-  float: left;
-  padding-top: 45px;
-  background-color: #4954E2; }
+  margin-top: 50px;
+  box-sizing: border-box; }
 
 .price-container, .price-cell, .add_nights, .price-string, .price-table, .table-head, .table-head-cell, .price-info, .table-first-row {
   display: flex;
@@ -27,17 +21,14 @@ ul {
 
 .price-container {
   margin: 0;
-  padding: 10px;
+  padding: 0;
   background-color: #fff;
   width: 100%;
-}
+  overflow: hidden; }
 
 .price-table {
-  width: 100%;
-  border: 1px solid #ACD9EB; 
-  border-radius: 2px;
-  border-bottom: none;
-}
+  width: 70%;
+  border: 1px solid grey; }
 
 .table-head {
   background-color: #158DE4;
@@ -59,7 +50,7 @@ ul {
 .table-first-row {
   width: 25%;
   text-align: left; }
-  .table-first-row h4, .table-first-row li {
+  .table-first-row h4 {
     color: #000; }
 
 .price-cell, .add_nights, .table-first-row {
@@ -71,17 +62,11 @@ ul {
   padding-bottom: 15px; }
   .price-cell li, .add_nights li, .table-first-row li {
     list-style-type: none; }
-.price-cell {
-  color: #000;
-}
 
 .price-cell, .add_nights {
   text-align: center; }
   .price-cell li:last-child, .add_nights li:last-child {
     color: grey; }
-.price-cell li:first-child {
-  color: #000;
-}
 
 .add_nights li:first-child {
   color: grey; }
@@ -89,24 +74,13 @@ ul {
   color: #000; }
 
 .price-info {
-  width: 100%;
   display: table;
   font-size: 1.2rem;
-  padding: 0 30% 0 35%;
-  text-transform: none;
-  line-height: 2rem;
-  background-color: #1A92F7; }
+  padding: 0 30% 0 30%; }
 
 @media screen and (max-width: 800px) {
-  .price-title {
-    padding: 10px 0;
-  }
   .price-table {
     width: 100%;
-    border: none; }
-  .price-info {
-    padding: 1rem;
-  }
-     }
+    border: none; } }
 
 /*# sourceMappingURL=add_style.css.map */
