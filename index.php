@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Rent house in Italy for summer" />
-	<meta name="keywords" content="rent house, hotel sciacca, sciacca, sicily, house sicily" />
+	<meta name="keywords" content="rent house, hotel sciacca, sciacca, sicily, house sicily, house italy" />
 	<meta name="author" content="Artem Safonov"/>
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -149,6 +149,7 @@
 		</div>
 		-->
 	</footer>
+	<script src='https://callback.cityhost.ua/js/' data-lang='ru'></script>
 	<script src="js/navigation.js"></script>
 	<script src="js/map.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa9_BiaEFgupSrRksVfuDcps4hrYf6Zas&callback=initMap" async defer>
