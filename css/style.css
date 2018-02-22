@@ -155,6 +155,66 @@ a:hover
 	height: 55px;
 	width: 210px;
 }
+#contactForm { 
+	display: none;
+	border: 6px solid #158DE4; 
+	border-radius: 10px;
+	padding: 2em;
+	width: 20em;
+	text-align: center;
+	background: #fff;
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+}
+#contactForm h2, small {
+	color: #000;
+}
+#contactForm input, textarea { 
+	border: 1px solid #158DE4;
+	margin: .8em auto;
+	font-family: inherit;
+	text-transform: inherit;
+	font-size: inherit;
+	display: block;
+	width: 280px;
+	padding: .4em;
+}
+#contactForm textarea {
+	border: 1px solid #158DE4;
+	height: 10em;
+	resize: none;
+}
+.formBtn { 
+  width: 140px;
+  display: inline-block;
+  background: #158DE4;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 30px;
+}
+/* Confirm popup page */
+.confirm {
+  display: none;
+  z-index: 999;
+  background-color: #158DE4;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center; }
+.confirm_message {
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  z-index: 1000; }
+
 .calendar
 {
 	background-color: #fff798;
@@ -236,6 +296,16 @@ a:hover
 .photobox img:hover
 {
 	transform: scale(1.4);
+}
+/* Video content */
+.video-box {
+	background-color: white;
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+.video-content {
+	width: 60%;
+	height: 450px;
 }
 .about_us-container
 {
@@ -484,6 +554,10 @@ a:hover
 	{
 		width: 100%;
 	}
+	.video-content {
+		width: 100%;
+		height: 315px;
+	}
 	.nav-container.responsive
 	{
 		animation: anim 1s;
@@ -493,6 +567,8 @@ a:hover
 		position: absolute;
 		top: 0;
 		width: 100%;
+		height: 100%;
+		line-height: 2.5em;
 	}
 	.nav-container.responsive .nav-menu
 	{
@@ -589,6 +665,10 @@ a:hover
 	{
 		width: 100%;
 	}
+	.video-content {
+		width: 100%;
+		height: 315px;
+	}
 	.nav-container.responsive
 	{
 		animation: anim 1s;
@@ -597,6 +677,9 @@ a:hover
 		opacity: .85;
 		position: absolute;
 		top: 0;
+		width: 100%;
+		height: 100%;
+		line-height: 2.5em;
 	}
 	.nav-container.responsive ul
 	{

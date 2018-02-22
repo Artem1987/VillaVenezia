@@ -49,18 +49,19 @@
 				<h1>Аренда дома на Сицилии san marco sciacca</h1>
 				<h2>Великолепное место с шикарным видом на море</h2>
 				<div class="button-box">
-					<div class="book-button">
-						<a href="https://www.homeaway.co.uk/p6229734#ratesAnchor">Забронировать</a>
+					<div id="contact" class="book-button">
+						Забронировать
 					</div>
 				</div>
+				<?php require 'contact-form.php'; ?>
 				<div class="button-box">
-					<div id="calendar" class="calendar">
-						<div>Выберите доступную дату</div>
-					</div>
-					<div class="book-button-small">
-						<div>Забронировать</div>
-					</div>
+				<div id="calendar" class="calendar">
+					<div>Выберите доступную дату</div>
 				</div>
+				<div class="book-button-small">
+					<div>Забронировать</div>
+				</div>
+			</div>
 			</div>
 		</div>
 </header>
@@ -81,6 +82,9 @@
 		</div>
 		<div class="info-string info-string2">
 			<p>закажите сейчас онлайн или позвоните напрямую собственнику +39 347 506 0527</p>
+		</div>
+		<div class="video-box">
+			<iframe class="video-content" src="https://www.youtube.com/embed/GU9mBM3oV2s?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
 		<div id="service" class="about_us-container parallax" style="background-image: url(images/bg2.jpg);">
 			<div class="about_us-title">
@@ -145,13 +149,23 @@
 			</div>
 			<div class="footer-column3 column_x3"></div>
 		</div>
+		<!-- Popup contact form confirmation -->
+		<div class="confirm" id="popup-page">
+			<div class="confirm_message">
+				Спасибо за заявку! Скоро мы с Вами свяжемся!
+			</div>
+		</div>
 		<!-- Autor 
 		<div class="footer-part2">made with love by <a href="#">&nbsp; Artem Safonov</a>
 		</div>
 		-->
 	</footer>
-	<script src='https://callback.cityhost.ua/js/' data-lang='ru'></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/popup.js"></script>
 	<script src="js/navigation.js"></script>
+	<script async src="js/common.js"></script>
 	<script src="js/map.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa9_BiaEFgupSrRksVfuDcps4hrYf6Zas&callback=initMap" async defer>
     </script>
